@@ -1,2 +1,2 @@
 # victory
-A simple php mvc framework
+This a simple php mvc framework.
