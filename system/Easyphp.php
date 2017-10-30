@@ -124,7 +124,7 @@ class Easyphp
 	public function setDbConfig()
 	{
 		if($this->_config['db']){
-			//Model::$dbConfig = $this->_config['db'];
+			Model::$dbConfig = $this->_config['db'];
 		}
 	}
 	
@@ -134,7 +134,7 @@ class Easyphp
 		$frameworks = __DIR__ . '/' . $class . '.php';
 		$controllers = APP_PATH . 'application/controllers/' . $class . '.php';
 		$models = APP_PATH . 'application/models/' . $class . '.php';
-		//echo $frameworks,'<br/>',$controllers,'<br/>',$models,'<br/>';
+
 		if(file_exists($frameworks)){
 			// 加载框架核心类
 			include $frameworks;
